@@ -49,7 +49,9 @@ public class guiApp extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+		/**
+                 *Create a button when clicked produces report on country.
+                 */
 		JButton querya = new JButton("Country");
 		querya.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -96,7 +98,9 @@ public class guiApp extends JFrame {
 		
 		table = new JTable();
 		scrollPane.setViewportView(table);
-		
+		/**
+                 *delete button clears the jtable.
+                 */
 		JButton clear = new JButton("Delete");
 		clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -105,7 +109,9 @@ public class guiApp extends JFrame {
 		});
 		clear.setBounds(10, 293, 89, 23);
 		contentPane.add(clear);
-		
+		/**
+                 *Create a button when clicked produces report on city.
+                 */
 		JButton queryb = new JButton("city");
 		queryb.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -143,7 +149,9 @@ public class guiApp extends JFrame {
 		});
 		queryb.setBounds(10, 45, 89, 23);
 		contentPane.add(queryb);
-		
+		/**
+                 *Create a button when clicked produces report on  population .
+                 */
 		JButton queryc = new JButton("Population");
 		queryc.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -184,7 +192,9 @@ public class guiApp extends JFrame {
 		});
 		queryc.setBounds(10, 79, 89, 23);
 		contentPane.add(queryc);
-		
+		/**
+                 *Create a button when clicked produces report on capital City.
+                 */
 		JButton queryd = new JButton("capital city");
 		queryd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
