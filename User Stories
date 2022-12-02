@@ -1,4 +1,6 @@
 Tasks defined as user stories
+
+City-
 As a product operator I want to view data on city so that I can see population from high to low
 Task-
 Create database
@@ -6,4 +8,38 @@ Create a gui system
 Create a swing button
 Create a jtable
 Create Jdbc connection
-Connect and upload data from database to table
+Connect and upload data from database to table.
+Test.
+
+Country-
+As a product operator I want to view data on country so that I can see population from high to low
+Task-
+Create database
+Create a gui system
+Create a swing button
+Create a jtable
+Create Jdbc connection
+Connect and upload data from database to table.
+Test.
+
+Capital city-
+As a product operator I want to view data on capital city so that I can see population from high to low
+Task-
+Create database
+Create a gui system
+Create a swing button
+Create a jtable
+Create Jdbc connection
+Connect and upload data from database to table.
+Test.
+
+Population-
+As a product operator I want to view data on population so that I can see population percentage in city and non city.
+Task-
+Create database
+Create a gui system
+Create a swing button
+Create a jtable
+Create Jdbc connection
+Connect and upload data from database to table.
+Test.
