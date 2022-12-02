@@ -2,3 +2,8 @@ Product backlog
 A report on city population from high to low
 A report on capital city population from high to low
 A report on country population from high to low.
+
+As a user I want to view city report 
+As a user I want to view country report 
+As a user I want to view population report 
+As a user I want to view capital city report.
