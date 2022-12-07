@@ -159,7 +159,7 @@ public class guiApp extends JFrame {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 			        Connection cc=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","");
 				    Statement sc=cc.createStatement();
-				    String qc="SELECT country.continent,SUM(distinct country.population)"+"SUM(city.population) as total in cities"+"CONCAT(FORMAT((SUM(city.population)/SUM(distinct country.population))*100,2),'%')as'livingincity%',"+"(SUM(distinct country.population)-SUM(city.population) as 'notincities'"+"CONCAT(FORMAT(((SUM(distinct country.population)-SUM(city.population))/SUM(distinct country.population))*100,2),'%') as 'notincities%' "+"FROM country,city where country.code=city.countrycode";
+				    String qc="SELECT country.continent,SUM(distinct country.population),SUM(city.population) as total in cities,CONCAT(FORMAT((SUM(city.population)/SUM(distinct country.population))*100,2),'%')as'livingincity%',(SUM(distinct country.population)-SUM(city.population) as 'notincities',CONCAT(FORMAT(((SUM(distinct country.population)-SUM(city.population))/SUM(distinct country.population))*100,2),'%') as 'notincities%',FROM country,city where country.code=city.countrycode";
 				    ResultSet rc= sc.executeQuery(qc);
 				    ResultSetMetaData md=rc.getMetaData();
 				    DefaultTableModel mo=(DefaultTableModel) table.getModel();
